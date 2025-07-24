@@ -4,8 +4,7 @@ local command = require("inlyne.commands.init")
 local Inlyne = {}
 
 local has_setup = false
---- initializes inlyne with the given configuration and initiates the download
---- for the markdown viewer prebuilt binaries, if necessary.
+--- initializes inlyne with the given configuration
 ---@param opts? Inlyne.Config
 function Inlyne.setup(opts)
 	--- merge user options with the defaults
