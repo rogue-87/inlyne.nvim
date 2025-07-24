@@ -10,13 +10,12 @@ function Inlyne.setup(opts)
 	--- merge user options with the defaults
 	opts = opts or {}
 
-	--- check if user is running a supported nvim version
 	if vim.fn.has("nvim-0.8") == 0 then
 		vim.notify("inlyne.nvim requires nvim 0.8 and newer", vim.log.levels.ERROR, { title = "inlyne.nvim" })
 		return
 	end
 
-	-- create Inlyne commands and it's subcommands
+	-- create Inlyne command and it's subcommands
 	vim.api.nvim_create_user_command("Inlyne", command.inlyne, {
 		nargs = "+",
 		desc = "completions for Inlyne command",
