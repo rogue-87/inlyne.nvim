@@ -12,16 +12,16 @@ function M.impl(args, opts)
 		else
 			vim.notify("Inlyne is not running", vim.log.levels.INFO)
 		end
+	end
 
-		if kind == "all" or kind == "tempfile" then
-			local path = temp.path
-			local exists = vim.fn.filereadable(path) == 1
+	if kind == "all" or kind == "tempfile" then
+		local path = temp.path
+		local exists = vim.fn.filereadable(path) == 1
 
-			if exists then
-				vim.notify("Tempfile exists at: " .. path, vim.log.levels.INFO)
-			else
-				vim.notify("Tempfile not found at: " .. path, vim.log.levels.WARN)
-			end
+		if exists then
+			vim.notify("Tempfile exists at: " .. path, vim.log.levels.INFO)
+		else
+			vim.notify("Tempfile not found at: " .. path, vim.log.levels.WARN)
 		end
 	end
 end
