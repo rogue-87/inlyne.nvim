@@ -11,8 +11,8 @@ function Inlyne.setup(opts)
 	opts = opts or {}
 
 	--- check if user is running a supported nvim version
-	if vim.fn.has("nvim-0.11") == 0 then
-		vim.notify("inlyne.nvim requires nvim 0.11 and newer", vim.log.levels.ERROR, { title = "inlyne.nvim" })
+	if vim.fn.has("nvim-0.8") == 0 then
+		vim.notify("inlyne.nvim requires nvim 0.8 and newer", vim.log.levels.ERROR, { title = "inlyne.nvim" })
 		return
 	end
 
