@@ -1,4 +1,4 @@
-local cmd = require("inlyne.commands.init")
+local command = require("inlyne.commands.init")
 
 ---@class Inlyne
 local Inlyne = {}
@@ -18,10 +18,10 @@ function Inlyne.setup(opts)
 	end
 
 	-- create Inlyne commands and it's subcommands
-	vim.api.nvim_create_user_command("Inlyne", cmd.inlyne, {
+	vim.api.nvim_create_user_command("Inlyne", command.inlyne, {
 		nargs = "+",
 		desc = "completions for Inlyne command",
-		complete = cmd.completions,
+		complete = command.completions,
 		bang = true,
 	})
 end
