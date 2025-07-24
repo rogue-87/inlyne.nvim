@@ -1,4 +1,5 @@
 local command = require("inlyne.commands.init")
+local config = require("inlyne.config")
 
 ---@class Inlyne
 local Inlyne = {}
@@ -7,8 +8,8 @@ local has_setup = false
 --- initializes inlyne with the given configuration
 ---@param opts? Inlyne.Config
 function Inlyne.setup(opts)
-	--- merge user options with the defaults
-	opts = opts or {}
+	-- merge and store config
+	config.set(opts)
 
 	if vim.fn.has("nvim-0.8") == 0 then
 		vim.notify("inlyne.nvim requires nvim 0.8 and newer", vim.log.levels.ERROR, { title = "inlyne.nvim" })

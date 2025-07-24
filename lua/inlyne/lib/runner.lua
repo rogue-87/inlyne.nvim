@@ -1,4 +1,5 @@
 local path = require("inlyne.lib.temp").path
+local config = require("inlyne.config")
 
 ---@class Runner
 ---@field bin string path to inlyne executable or just "inlyne"
@@ -8,7 +9,7 @@ local path = require("inlyne.lib.temp").path
 ---@field _job integer? internal job handle
 ---@field is_running boolean
 local Runner = {
-	bin = "inlyne",
+	bin = config.values.bin,
 	stdin = nil,
 	stdout = nil,
 	stderr = nil,
