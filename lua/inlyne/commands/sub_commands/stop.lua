@@ -1,5 +1,5 @@
-local runner = require("inlyne.lib.runner")
 local temp = require("inlyne.lib.temp")
+local runner = require("inlyne.lib.runner")
 
 local M = {}
 
