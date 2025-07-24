@@ -17,7 +17,6 @@ local Runner = {
 	is_running = false,
 }
 
---- Execute the inlyne binary on the current file
 function Runner:execute()
 	if vim.fn.filereadable(path) == 0 then
 		vim.notify("Current file is not saved or does not exist", vim.log.levels.ERROR)
@@ -41,6 +40,10 @@ function Runner:execute()
 				vim.notify("Inlyne exited with code: " .. code, vim.log.levels.WARN)
 			end
 		end,
+		env = {
+			HOME = os.getenv("HOME"),
+			XDG_CONFIG_HOME = (os.getenv("HOME") .. "/.config"),
+		},
 	})
 
 	if self._job > 0 then
