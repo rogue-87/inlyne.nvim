@@ -5,7 +5,7 @@ Inlyne.nvim is a simple neovim plugin wrapper around the [inlyne](https://github
 ## ❗ Requirements
 
 - Neovim >= 0.8
-- inlyne installed (`cargo install inlyne` or [pre-built binary](https://github.com/Inlyne-Project/inlyne/releases/tag/v0.5.0) )
+- inlyne installed (`cargo install inlyne` or [pre-built binary](https://github.com/Inlyne-Project/inlyne/releases) )
 
 ## 📦 Installation
 
