@@ -21,6 +21,7 @@ function M.impl()
 
 	temp:create()
 	runner:execute()
+	vim.notify("Inlyne started", vim.log.levels.INFO)
 end
 
 return M
