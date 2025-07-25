@@ -39,6 +39,9 @@ function Runner:execute()
 			if code ~= 0 then
 				vim.notify("Inlyne exited with code: " .. code, vim.log.levels.WARN)
 			end
+
+			self._job = nil
+			self.is_running = false
 		end,
 		env = {
 			HOME = os.getenv("HOME"),
@@ -56,8 +59,6 @@ end
 function Runner:stop()
 	if self._job then
 		vim.fn.jobstop(self._job)
-		self._job = nil
-		self.is_running = false
 	else
 		vim.notify("Inlyne runner is not running", vim.log.levels.INFO)
 	end
