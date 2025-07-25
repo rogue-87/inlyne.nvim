@@ -1,5 +1,3 @@
-local config = require("inlyne.config")
-
 local autocmd_id
 local augroup = vim.api.nvim_create_augroup("Inlyne", { clear = true })
 
@@ -25,7 +23,7 @@ end
 ---@class Temp
 ---@field path string
 local Temp = {
-	path = config.values.temp_path,
+	path = (vim.fn.tempname() .. ".md"),
 }
 
 function Temp:create()

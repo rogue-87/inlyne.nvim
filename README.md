@@ -33,7 +33,6 @@ Install the plugin with your package manager of choice
     ---@field bin string
     local default_config = {
         bin = "inlyne" -- must be available in PATH
-        temp_file = "/tmp/inlyne.md"
     }
 ```
 

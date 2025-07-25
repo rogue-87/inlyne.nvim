@@ -1,9 +1,7 @@
 ---@class Inlyne.Config
 ---@field bin string path to inlyne binary
----@field temp_path string path to temp file
 local default_config = {
 	bin = "inlyne",
-	temp_path = "/tmp/inlyne.md",
 }
 
 local M = { values = vim.deepcopy(default_config) }
