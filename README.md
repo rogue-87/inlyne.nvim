@@ -40,8 +40,8 @@ Install the plugin with your package manager of choice
 
 ## Usage
 
-`Inlyne start` : starts inlyne
+`Inlyne enable` : starts inlyne
 
-`Inlyne stop` : stops inlyne
+`Inlyne disable` : stops inlyne
 
 `Inlyne toggle`: toggles inlyne
