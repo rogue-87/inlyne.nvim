@@ -43,6 +43,7 @@ function Runner:execute()
 			self._job = nil
 			self.is_running = false
 		end,
+        -- TODO: handle macOS config file path
 		env = {
 			HOME = os.getenv("HOME"),
 			XDG_CONFIG_HOME = (os.getenv("HOME") .. "/.config"),

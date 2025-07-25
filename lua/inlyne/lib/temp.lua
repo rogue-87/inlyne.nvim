@@ -3,6 +3,10 @@ local augroup = vim.api.nvim_create_augroup("Inlyne", { clear = true })
 
 ---@param path string
 local function write_to_tempfile(path)
+	-- TODO: make this function more efficient
+	-- right now all it does simply taking the entire content of the buffer
+	-- and passing it to the temp file that inlyne reads from
+	-- might cause some issues when opening big markdown files
 	local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
 	local content = table.concat(lines, "\n") .. "\n"
 
