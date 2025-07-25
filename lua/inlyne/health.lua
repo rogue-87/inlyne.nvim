@@ -1,11 +1,12 @@
+local config = require("inlyne.config")
 local M = {}
 
 function M.check()
-	local has_inlyne = vim.fn.executable("inlyne") == 1
+	local has_inlyne = vim.fn.executable(config.values.bin) == 1
 	if has_inlyne then
-		vim.health.ok("inlyne binary is available in PATH")
+		vim.health.ok("inlyne binary is available.")
 	else
-		vim.health.error("inlyne binary is not available. Please install it.")
+		vim.health.error("inlyne binary is not available.")
 	end
 
 	if vim.fn.has("nvim-0.8") == 1 then
