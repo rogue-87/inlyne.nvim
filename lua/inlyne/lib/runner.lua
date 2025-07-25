@@ -36,7 +36,7 @@ function Runner:execute()
 			self.stderr = table.concat(data, "\n")
 		end,
 		on_exit = function(_, code)
-			if code ~= 0 then
+			if code ~= 0 and code ~= 143 then
 				vim.notify("Inlyne exited with code: " .. code, vim.log.levels.WARN)
 			end
 
