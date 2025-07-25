@@ -1,17 +1,14 @@
-local temp = require("inlyne.lib.temp")
 local runner = require("inlyne.lib.runner")
+local enable = require("inlyne.commands.sub_commands.enable").impl
+local disable = require("inlyne.commands.sub_commands.disable").impl
 
 local M = {}
 
-function M.impl(args, opts)
-	if runner.is_running then
-		runner:stop()
-		temp:close()
-		vim.notify("Inlyne stopped", vim.log.levels.INFO)
+function M.impl()
+	if not runner.is_running then
+		enable()
 	else
-		temp:create()
-		runner:execute()
-		vim.notify("Inlyne started", vim.log.levels.INFO)
+		disable()
 	end
 end
 
