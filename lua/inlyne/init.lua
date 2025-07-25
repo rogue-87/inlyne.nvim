@@ -1,5 +1,6 @@
 local command = require("inlyne.commands.init")
 local config = require("inlyne.config")
+local autocmds = require("inlyne.autocmds")
 
 ---@class Inlyne
 local Inlyne = {}
@@ -15,6 +16,8 @@ function Inlyne.setup(opts)
 		vim.notify("inlyne.nvim requires nvim 0.8 and newer", vim.log.levels.ERROR, { title = "inlyne.nvim" })
 		return
 	end
+
+	autocmds.set()
 
 	-- create Inlyne command and it's subcommands
 	vim.api.nvim_create_user_command("Inlyne", command.inlyne, {
