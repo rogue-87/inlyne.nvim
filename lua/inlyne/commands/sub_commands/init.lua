@@ -1,6 +1,6 @@
 local M = {
-	enable = require("lua.inlyne.commands.sub_commands.enable"),
-	disable = require("lua.inlyne.commands.sub_commands.disable"),
+	enable = require("inlyne.commands.sub_commands.enable"),
+	disable = require("inlyne.commands.sub_commands.disable"),
 	toggle = require("inlyne.commands.sub_commands.toggle"),
 }
 
