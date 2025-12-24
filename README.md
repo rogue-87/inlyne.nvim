@@ -2,6 +2,8 @@
 
 Inlyne.nvim is a simple neovim plugin wrapper around the [inlyne](https://github.com/Inlyne-Project/inlyne) markdown viewer tool.
 
+![Inlyne in Action](https://private-user-images.githubusercontent.com/68822497/529936435-0174e405-48a0-40e2-996a-9518f284ff0b.webp?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjY1NjQ4OTcsIm5iZiI6MTc2NjU2NDU5NywicGF0aCI6Ii82ODgyMjQ5Ny81Mjk5MzY0MzUtMDE3NGU0MDUtNDhhMC00MGUyLTk5NmEtOTUxOGYyODRmZjBiLndlYnA_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIyNFQwODIzMTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZGRkYjNmNDkxZDFjYzIzOGJmYTZjOGJiNzQ3MWYzNzNlZDA5YzZmNmQwMzYzNWE4ZTZiMGQ5M2RiYTM4YWY4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.5tFdl2ZIFCjChB14uTCx4YSK0NSbEbNELhHhPfbokqE)
+
 ## ❗ Requirements
 
 - Neovim >= 0.8
@@ -35,11 +37,11 @@ Install the plugin with your package manager of choice
     <summary>Default Options</summary>
 
 ```lua
-    ---@class Inlyne.Config
-    ---@field bin string
-    local default_config = {
-        bin = "inlyne" -- must be available in PATH
-    }
+---@class Inlyne.Config
+---@field bin string
+local default_config = {
+    bin = "inlyne" -- must be available in PATH
+}
 ```
 
 </details>
