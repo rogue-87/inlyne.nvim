@@ -10,7 +10,8 @@ require("lazy.minit").repro({
 	spec = {
 		{
 			"rogue-87/inlyne.nvim",
-			dir = "~/Code/personal/inlyne.nvim/",
+			lazy = false,
+			dir = vim.fn.getcwd(),
 			dev = true,
 			opts = {},
 			keys = {
