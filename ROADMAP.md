@@ -4,7 +4,6 @@ This roadmap outlines the planned features and improvements for `inlyne.nvim`.
 
 ## 🟢 Phase 1: Core Enhancements
 - [ ] **Live Real-time Preview**: Update the preview as you type using `TextChanged` and `TextChangedI` with a debounced writer to ensure performance.
-- [ ] **Multi-Buffer Support**: Refactor state management to support multiple concurrent preview sessions for different markdown files.
 - [ ] **Smart Auto-Cleanup**: Automatically terminate `inlyne` processes when the corresponding markdown buffer is closed or deleted.
 
 ## 🟡 Phase 2: Configuration & Customization
