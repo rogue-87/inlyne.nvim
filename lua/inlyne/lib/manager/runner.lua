@@ -9,12 +9,12 @@ local Runner = {}
 Runner.__index = Runner
 
 function Runner:new(path)
-	local o = setmetatable({}, self)
-	o.bin = config.values.bin
-	o.path = path
-	o._job = nil
-	o.is_running = false
-	return o
+	local self = setmetatable({}, self)
+	self.bin = config.values.bin
+	self.path = path
+	self._job = nil
+	self.is_running = false
+	return self
 end
 
 function Runner:execute()
