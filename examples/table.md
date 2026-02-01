@@ -1,57 +1,45 @@
-# Markdown Table Test
+# 📋 Markdown Table Gallery
 
-This file contains several Markdown tables to test how well they render.
-
----
-
-## 📋 Basic Table
-
-| Name  | Role      | Status   |
-| ----- | --------- | -------- |
-| Alice | Developer | Active   |
-| Bob   | Designer  | Inactive |
-| Carol | Manager   | Active   |
+A collection of tables to test layout, alignment, and complex cell content.
 
 ---
 
-## 📊 Table with Alignment
+## 📊 Comparison Table
 
-| Item        | Quantity | Price |
-| :---------- | -------: | ----: |
-| Apples      |       10 | $2.00 |
-| Bananas     |        5 | $1.50 |
-| Watermelons |        2 | $4.75 |
-
----
-
-## ✅ Task Table
-
-| Task                  | Assignee | Done |
-| --------------------- | -------- | ---- |
-| Write unit tests      | Alice    | ✅   |
-| Finalize UI design    | Bob      | ❌   |
-| Prepare release notes | Carol    | ✅   |
+| Feature | `inlyne` | `glow` | `markview.nvim` |
+| :--- | :---: | :---: | :---: |
+| Native Window | ✅ | ❌ | ✅ |
+| Live Preview | ✅ | ❌ | ✅ |
+| Media Support | ✅ | ❌ | ❌ |
+| Speed | 🚀 Fast | 🐢 Slow | ⚡ Med |
 
 ---
 
-## 🧪 Weird Columns and Empty Cells
+## 💰 Financial Data (Right Aligned)
 
-| A   | B   | C   |
-| --- | --- | --- |
-| 1   |     | 3   |
-|     | 2   |     |
-| 4   | 5   | 6   |
-
----
-
-## 📦 Software Versions
-
-| Package     | Version  | Updated |
-| ----------- | -------- | ------- |
-| inlyne      | `v0.3.1` | ✅      |
-| Neovim      | `0.9.5`  | ✅      |
-| markdown-it | `13.0.1` | ❌      |
+| Month | Expenses | Revenue | Profit |
+| :--- | ---: | ---: | ---: |
+| January | $1,200.00 | $5,000.00 | **$3,800.00** |
+| February | $950.50 | $4,800.00 | **$3,849.50** |
+| March | $2,100.00 | $1,200.00 | <span style="color:red">-$900.00</span> |
 
 ---
 
-Tested with: **Inlyne + Neovim Wrapper**
+## 🏗️ Complex Cells
+
+| Type | Example |
+| :--- | :--- |
+| **Formatting** | *Italic*, **Bold**, ~~Strike~~ |
+| **Code** | `const x = 10;` |
+| **Links** | [Click me](https://example.com) |
+| **Emoji** | 🚀 🦀 🍕 🎸 |
+
+---
+
+## 🧪 Wide Table Test
+
+| ID | User | Email | Role | Joined | Last Login | Status | Tokens |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Alice | alice@example.com | Admin | 2023-01-01 | 2024-02-01 | Active | 5000 |
+| 2 | Bob | bob@example.com | User | 2023-05-12 | 2024-01-30 | Idle | 120 |
+| 3 | Charlie | charlie@example.com | Moderator | 2023-11-20 | 2024-02-01 | Active | 890 |

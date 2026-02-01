@@ -1,77 +1,72 @@
-# 🧪 Advanced Markdown Test
+# 🧪 Advanced Markdown Features
 
-This document is designed to test a wide variety of **Markdown** features in one go.
-
----
-
-## 1. 📝 Emphasis
-
-- *Italic*  
-- **Bold**  
-- ***Bold Italic***  
-- ~~Strikethrough~~
+This document tests complex Markdown rendering, including nested elements and GFM extensions.
 
 ---
 
-## 2. 📚 Blockquote & Nested Blockquote
+## 🍱 Nested Formatting
 
-> This is a blockquote.
+> [!NOTE]
+> This is a GitHub-style alert (if supported).
 >
-> > And this is a nested blockquote.
-> >
-> > **Neat**, right?
+> 1. Lists inside blockquotes
+> 2. With **bold** and `code`
+>    - And even deeper nesting
+>    - > A quote inside a list inside a quote.
 
 ---
 
-## 3. 🔢 Ordered List & Nested Lists
+## 🛠️ Task Management
 
-1. First item
-2. Second item
-   - Sub-item A
-   - Sub-item B
-     - Nested deeper
-3. Third item
-
----
-
-## 4. ✅ Task List
-
-- [x] Install `inlyne`
-- [x] Set up Neovim wrapper
-- [ ] Add support for live reload (maybe)
-- [x] Drink coffee ☕
+- [x] Project initialized
+- [x] Core wrapper implemented
+- [ ] Add support for custom CSS
+- [ ] Implement scroll synchronization
+- [x] Drink water 💧
 
 ---
 
-## 5. 🧾 Table with Alignment and Formatting
+## 📐 Mathematical Expressions
 
-| Feature        | Supported | Notes                        |
-|:---------------|:---------:|------------------------------|
-| Tables         | ✅        | With alignment               |
-| Code blocks    | ✅        | Supports syntax highlighting |
-| Emojis         | ✅        | 🧠 🐛 🎯                      |
-| Images         | ✅        | If terminal/browser supports |
+Testing LaTeX support:
 
----
+The quadratic formula is $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
 
-## 6. 🔗 Links and Images
-
-Here’s a link to [Rust](https://www.rust-lang.org/).
-
-![Rust Logo](https://www.rust-lang.org/static/images/rust-social-wide.jpg)
+$$
+I = \int_{0}^{\infty} e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+$$
 
 ---
 
-## 7. 🧠 Code
+## 📝 Footnotes
 
-### Inline Code
+Here is a simple footnote[^1]. With more text here[^long-note].
 
-Use `cargo install inlyne` to install it.
+[^1]: This is the first footnote.
+[^long-note]: This is a longer footnote with multiple lines.
+    It continues here.
 
-### Rust Code Block
+---
 
-```rust
-fn main() {
-    println!("Hello, Markdown!");
-}
-```
+## 🧬 Definitions
+
+Term 1
+: Definition 1
+
+Term 2
+: Definition 2 with *formatting*.
+
+---
+
+## 🖼️ Media Test
+
+### Remote Image
+![Inlyne Action](https://raw.githubusercontent.com/Inlyne-Project/inlyne/master/assets/inlyne_demo.gif)
+
+---
+
+## 🏁 Horizontal Rules
+
+---
+***
+___
