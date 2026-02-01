@@ -39,8 +39,10 @@ Install the plugin with your package manager of choice
 ```lua
 ---@class Inlyne.Config
 ---@field bin string
+---@field debounce_ms integer
 local default_config = {
-    bin = "inlyne" -- must be available in PATH
+    bin = "inlyne", -- must be available in PATH
+    debounce_ms = 200, -- delay in milliseconds for live preview updates
 }
 ```
 

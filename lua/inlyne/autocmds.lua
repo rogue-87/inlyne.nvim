@@ -1,15 +1,24 @@
 local M = {}
 
 function M.set()
-	vim.api.nvim_create_autocmd("VimLeavePre", {
-		group = vim.api.nvim_create_augroup("InlyneClose", { clear = true }),
-		callback = function()
-			local runner = require("inlyne.lib.runner")
-			local temp = require("inlyne.lib.temp")
+	local group = vim.api.nvim_create_augroup("Inlyne", { clear = true })
 
-			if runner.is_running then
-				runner:stop()
-				temp:close()
+	vim.api.nvim_create_autocmd("VimLeavePre", {
+		group = group,
+		callback = function()
+			require("inlyne.lib.manager").disable()
+		end,
+	})
+
+	vim.api.nvim_create_autocmd("BufEnter", {
+		group = group,
+		callback = function(args)
+			if vim.bo[args.buf].filetype ~= "markdown" then
+				return
+			end
+			local manager = require("inlyne.lib.manager")
+			if manager.instance then
+				manager.enable(args.buf)
 			end
 		end,
 	})

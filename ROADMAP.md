@@ -3,8 +3,8 @@
 This roadmap outlines the planned features and improvements for `inlyne.nvim`.
 
 ## 🟢 Phase 1: Core Enhancements
-- [ ] **Live Real-time Preview**: Update the preview as you type using `TextChanged` and `TextChangedI` with a debounced writer to ensure performance.
-- [ ] **Smart Auto-Cleanup**: Automatically terminate `inlyne` processes when the corresponding markdown buffer is closed or deleted.
+- [x] **Live Real-time Preview**: Update the preview as you type using `TextChanged` and `TextChangedI` with a debounced writer to ensure performance.
+- [x] **Smart Auto-Cleanup**: Automatically terminate `inlyne` processes when the corresponding markdown buffer is closed or deleted.
 
 ## 🟡 Phase 2: Configuration & Customization
 - [ ] **Native CLI Flags**: Expose `inlyne` options (theme, scale, opacity, etc.) in the plugin configuration.

@@ -1,16 +1,15 @@
-local temp = require("inlyne.lib.temp")
-local runner = require("inlyne.lib.runner")
+local manager = require("inlyne.lib.manager")
 
 local M = {}
 
 function M.impl()
-	if not runner.is_running then
-		vim.notify("Inlyne is not running", vim.log.levels.INFO)
+	local bufnr = vim.api.nvim_get_current_buf()
+	if not manager.is_active(bufnr) then
+		vim.notify("Inlyne is not running for this buffer", vim.log.levels.INFO)
 		return
 	end
 
-	runner:stop()
-	temp:close()
+	manager.disable(bufnr)
 	vim.notify("Inlyne stopped", vim.log.levels.INFO)
 end
 
