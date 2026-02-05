@@ -54,7 +54,7 @@ if __name__ == "__main__":
 ## 📜 TypeScript / React
 
 ```tsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Counter: React.FC = () => {
   const [count, setCount] = useState(0);

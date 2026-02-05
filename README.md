@@ -2,9 +2,7 @@
 
 inlyne.nvim is a simple neovim plugin wrapper around the [inlyne](https://github.com/Inlyne-Project/inlyne) markdown viewer tool.
 
-
 https://github.com/user-attachments/assets/35738769-763b-4def-b87f-dc100ea1f65e
-
 
 ## ❗ Requirements
 

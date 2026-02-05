@@ -12,7 +12,7 @@ This document tests complex Markdown rendering, including nested elements and GF
 > 1. Lists inside blockquotes
 > 2. With **bold** and `code`
 >    - And even deeper nesting
->    - > A quote inside a list inside a quote.
+>    - A quote inside a list inside a quote.
 
 ---
 
@@ -43,6 +43,7 @@ $$
 Here is a simple footnote[^1]. With more text here[^long-note].
 
 [^1]: This is the first footnote.
+
 [^long-note]: This is a longer footnote with multiple lines.
     It continues here.
 
@@ -54,13 +55,14 @@ Term 1
 : Definition 1
 
 Term 2
-: Definition 2 with *formatting*.
+: Definition 2 with _formatting_.
 
 ---
 
 ## 🖼️ Media Test
 
 ### Remote Image
+
 ![Inlyne Action](https://raw.githubusercontent.com/Inlyne-Project/inlyne/master/assets/inlyne_demo.gif)
 
 ---
@@ -68,5 +70,7 @@ Term 2
 ## 🏁 Horizontal Rules
 
 ---
-***
-___
+
+---
+
+---
