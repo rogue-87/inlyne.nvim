@@ -1,12 +1,15 @@
 # 📓 Inlyne.nvim
 
+![Neovim](https://img.shields.io/badge/Neovim-0.11+-green.svg?style=flat&logo=neovim)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+
 inlyne.nvim is a simple neovim plugin wrapper around the [inlyne](https://github.com/Inlyne-Project/inlyne) markdown viewer tool.
 
 https://github.com/user-attachments/assets/35738769-763b-4def-b87f-dc100ea1f65e
 
 ## ❗ Requirements
 
-- Neovim >= 0.8
+- Neovim >= 0.11
 - inlyne installed (`cargo install inlyne` or [pre-built binary](https://github.com/Inlyne-Project/inlyne/releases) )
 
 ## 📦 Installation
