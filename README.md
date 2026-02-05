@@ -1,8 +1,10 @@
 # 📓 Inlyne.nvim
 
-Inlyne.nvim is a simple neovim plugin wrapper around the [inlyne](https://github.com/Inlyne-Project/inlyne) markdown viewer tool.
+inlyne.nvim is a simple neovim plugin wrapper around the [inlyne](https://github.com/Inlyne-Project/inlyne) markdown viewer tool.
 
-![Inlyne in Action](https://github.com/user-attachments/assets/68c82621-9e1a-4121-b413-446c0654d940)
+
+https://github.com/user-attachments/assets/35738769-763b-4def-b87f-dc100ea1f65e
+
 
 ## ❗ Requirements
 
@@ -33,9 +35,6 @@ Install the plugin with your package manager of choice
 > [!important]
 > Make sure to run `:checkhealth inlyne` if something isn't working properly
 
-<details>
-    <summary>Default Options</summary>
-
 ```lua
 ---@class Inlyne.Config
 ---@field bin string
@@ -45,8 +44,6 @@ local default_config = {
     debounce_ms = 200, -- delay in milliseconds for live preview updates
 }
 ```
-
-</details>
 
 ## Usage
 
